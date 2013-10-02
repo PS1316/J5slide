@@ -1,0 +1,25 @@
+-----
+Usage
+-----
+
+Add script to a HTML document that contains slides using the following format:
+
+  <section typeof="http://purl.org/ontology/bibo/Slide">
+    Slide content here
+    <details>
+      Slide notes here
+    </details>
+  </section>
+
+For image slides use:
+
+  <section typeof="http://purl.org/ontology/bibo/Slide">
+    <img class="fill" src="filename">
+    <details>
+      Slide notes here
+    </details>
+  </section>
+
+
+
+Based on DZ Slides - http://paulrouget.com/dzslides/
