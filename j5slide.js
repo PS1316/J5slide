@@ -112,27 +112,27 @@ J5.loadSlideFrame = function() {
     
     // define iframe content styles
     var styles = "html { background-color: black; }" +
-                 "a { color: #FF0066; }" +
+                 "a { color: #0066FF; }" +
                  "a:hover { text-decoration: underline; }" +
                  "footer { position: absolute; bottom: 50px; right: 50px; }" +
-                 "strong { color: #FF0066; }" +
-                 "body { font-family: 'Oswald', arial, serif; background-color: white; color: white; font-size: 1.9em; line-height: 120%; }" +
+                 "strong { color: #0066FF; }" +
+                 "body { font-family: 'Oswald', arial, serif; background-color: white; color: black; font-size: 30px; line-height: 120%; }" +
+                 "img { margin: 0 auto; display: block; }" +
+                 "p img { position: relative; left: -20px }" +
                  "section { -moz-transition: left 400ms linear 0s; -webkit-transition: left 400ms linear 0s; -ms-transition: left 400ms linear 0s; transition: left 400ms linear 0s; }" + // transition effect
-                 "section { background: #1C1C1C; overflow: hidden; left: -150%; }" +
+                 "section { background: white; overflow: hidden; left: -150%; }" +
                  "section[slide-selected] { left: 0; }" +
                  "section[slide-selected] ~ section { left: +150%; }" +
-                 ".chapter { background-color: black; }" +
-                 ".chapter h1 {line-height: 600px; vertical-align: middle; margin: 0; text-align: center; display: block }" +
-                 "h1 { margin: 50px 100px 0 100px; font-size: 50px; text-shadow: 0px -1px 0px #000; text-align: left; }" +
-                 "h2 { color: #FAE50B; margin: 70px 0 0 0; font-size: 40px; text-align: center; }" +
-                 "ul { margin-top: 70px; font-size: 35px; text-align: right; border-right: 4px solid white; padding-right: 40px; min-width: 310px; margin-left: 50px; display: inline-block; }" +
-                 "q, p { margin: 50px auto 0 auto; width: 600px; }" +
+                 "h1 { color: #FF6600; margin: 20px 0; font-size: 50px; text-align: center; padding: 0 10px; line-height: 100% }" +
+                 "h2 { color: #FF0066; margin: 20px 0; font-size: 40px; text-align: center; padding: 0 10px; line-height: 100% }" +
+                 "ul { margin: 10px 0 0 100px; font-size: 0.9em; width: 750px; line-height: 100%; display: inline-block; }" +
+                 "q, p { padding: 10px 20px; }" +
                  "q:after { content: ''; }" +
                  "q:before { content: ''; }" +
                  "q { display: block; margin-top: 140px; }" +
                  "video { position: absolute; top: 210px; width: 260px; left: 445px; box-shadow: 0 0 10px black; }" +
                  "#arrow { position: absolute; top: 165px; left: 460px; font-size: 100px; color: white; }" +
-                 "li { list-style-type: none; }" +
+                 "li { list-style-type: square; }" +
                  // important - don't touch!
                  "* { margin: 0; padding: 0; }" +
                  "details {display: none; }" +
@@ -203,7 +203,7 @@ J5.loadSlideFrame = function() {
     // detach slides from document and insert copies inside iframe
     for (var i = 0; i < J5.slides.length; i++) {
         if (J5.slides[i].parentNode) {
-            J5.slides[i].parentNode.removeChild(J5.slides[i]);
+            //J5.slides[i].parentNode.removeChild(J5.slides[i]);
         }
         var slides = doc.importNode(J5.slides[i], true);
         doc.body.appendChild(slides);
