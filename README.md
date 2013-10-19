@@ -1,6 +1,5 @@
 What is J5slide?
 ================
-___
 
 J5slide is a framework for creating web-based slideshow presentations. It turns HTML with a declarative slide markup into a slideshow presentations with the use of JavaScript, HTML5 and CSS3.
 
@@ -8,7 +7,7 @@ Based on DZ Slides - http://github.com/paulrouget/dzslides
 
 Features
 ========
-___
+
 -   Presentations can be shown either alone or embedded within existing pages (standalone and embedded viewers)
 -   Slides can contain any HTML content (text, images, videos, iframes, etc)
 -   Adding slideshow behaviour to a document containing slides is as simple as adding a single line
@@ -19,7 +18,6 @@ ___
 
 Instructions
 ============
-___
 
 There are two slide viewers available, ```j5slide.js``` and ```j5slide_embed.js```. ```j5slide.js``` allows you to display a slideshow by itself and features a presenter mode that can be toggled with ```CTRL + SPACE```. ```j5slide_embed.js``` is used to display a slideshow as an embed in an existing document that contains other content. To enable the slideshow on a page containing appropriately formatted slides just add one of the scripts to the page and use the left and right arrow keys to navigate through the slides.
 
@@ -49,7 +47,6 @@ Images (for example slide images that have been exported from another slide appl
 
 License
 =======
-___
 
 ```
             DO WHAT THE FUCK YOU WANT TO PUBLIC LICENSE
