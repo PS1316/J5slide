@@ -197,7 +197,7 @@ J5.setupPresenterWin = function() {
                  ".slide ul { margin: 10px 0 0 50px; font-size: 0.9em; line-height: 100%; display: inline-block; }" +
                  ".slide object { display: block; width: 100%; height: 100%; }" +
                  ".slide video { margin: 0 auto; display: block; width: 400px; height: 300px; }" +
-                 ".slide>details { display: none; }" +
+                 ".slide details { display: none; }" +
                  ".slide q, .slide p { padding: 5px 20px; }" +
                  "a { color: #0066FF; }" +
                  "a:hover { text-decoration: underline; }" +
