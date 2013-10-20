@@ -34,7 +34,7 @@ J5.loadSlides = function() {
                  "li { list-style-type: square; }" +
                  // important styles below - don't touch!
                  "* { margin: 0; padding: 0; }" +
-                 "section>details {display: none; }" +
+                 "details {display: none; }" +
                  "body { width: 800px; height: 600px; margin-left: -400px; margin-top: -300px; position: absolute; top: 50%; left: 50%; overflow: hidden; }" +
                  "html { overflow: hidden; }" +
                  "section { position: absolute; pointer-events: none; width: 100%; height: 100%; overflow: hidden; left: -150%; }" +
