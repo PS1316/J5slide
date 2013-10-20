@@ -1,7 +1,7 @@
 What is J5slide?
 ================
 
-J5slide is a framework for creating web-based slideshow presentations. It turns HTML with a declarative slide markup into a slideshow presentations with the use of JavaScript, HTML5 and CSS3.
+J5slide is a framework for creating web-based slideshow presentations. It turns HTML with a declarative slide markup into a slideshow presentation with the use of JavaScript, HTML5 and CSS3.
 
 Based on DZ Slides - http://github.com/paulrouget/dzslides
 
