@@ -24,8 +24,8 @@ J5.loadSlides = function() {
                  "h1 { color: #FFA500; margin: 20px 0; font-size: 46px; text-align: center; padding: 0 10px; line-height: 100% }" +
                  "h2 { color: #FF0066; margin: 20px 0; font-size: 40px; text-align: center; padding: 0 10px; line-height: 100% }" +
                  "h3 { color: #FFD700; margin: 20px 0; font-size: 34px; text-align: center; padding: 0 10px; line-height: 100% }" +
-                 "ul { margin: 10px 0 0 50px; font-size: 0.9em; width: 750px; line-height: 100%; display: inline-block; }" +
-                 "q, p { padding: 5px 20px; }" +
+                 "ul { margin: 10px 0 0 80px; font-size: 0.9em; }" +
+                 "q, p { padding: 5px 40px; }" +
                  "q:after { content: ''; }" +
                  "q:before { content: ''; }" +
                  "q { display: block; margin-top: 140px; }" +
@@ -104,6 +104,8 @@ J5.loadSlides = function() {
         while (parent.firstChild && parent.firstChild != objects[i]) {
             parent.removeChild(parent.firstChild);
         }
+        objects[i].style.width = "100%";
+        objects[i].style.height = "100%";
     }
 
     // scale slide contents to fit slides
@@ -182,7 +184,7 @@ J5.setupPresenterWin = function() {
                  "#current, #next { position: absolute; top: 0; bottom: 250px; background: #1C1C1C; }" +
                  "#current { left: 0; right: 50%; border-right: 2px solid #1E90FF; }" +
                  "#next { left: 50%; right: 0; border-left: 2px solid #1E90FF; }" +
-                 ".slide { width: 800px; height: 600px; background: #1C1C1C; overflow: hidden; margin-left: -400px; margin-top: -300px; position: relative; top: 50%; left: 50%; }" +
+                 ".slide { width: 800px; height: 600px; background: #1C1C1C; overflow: hidden; margin-left: -400px; margin-top: -300px; position: absolute; top: 50%; left: 50%; }" +
                  "#notes { position: absolute; bottom: 0; left: 0; right: 0; height: 250px; background: #CCC; border-top: 4px solid #1E90FF; padding: 20px 245px 20px 20px; overflow: auto; " +
                           "color: black; font-size: 16px; line-height: normal; box-sizing: border-box; -moz-box-sizing: border-box; -webkit-box-sizing: border-box; }" +
                  "#slidecount, #time { position: absolute; right: 50px; background: #1C1C1C; border-radius: 10px; font-size: 24px; font-weight: bold; height: 50px; line-height: 50px; text-align: center; width: 175px; }" +
@@ -194,11 +196,11 @@ J5.setupPresenterWin = function() {
                  ".slide h1 { color: #FFA500; margin: 20px 0; font-size: 46px; text-align: center; padding: 0 10px; line-height: 100% }" +
                  ".slide h2 { color: #FF0066; margin: 20px 0; font-size: 40px; text-align: center; padding: 0 10px; line-height: 100% }" +
                  ".slide h3 { color: #FFD700; margin: 20px 0; font-size: 34px; text-align: center; padding: 0 10px; line-height: 100% }" +
-                 ".slide ul { margin: 10px 0 0 50px; font-size: 0.9em; line-height: 100%; display: inline-block; }" +
+                 ".slide ul { margin: 10px 0 0 80px; font-size: 0.9em; }" +
                  ".slide object { display: block; width: 100%; height: 100%; }" +
                  ".slide video { margin: 0 auto; display: block; width: 400px; height: 300px; }" +
                  ".slide details { display: none; }" +
-                 ".slide q, .slide p { padding: 5px 20px; }" +
+                 ".slide q, .slide p { padding: 5px 40px; }" +
                  "a { color: #0066FF; }" +
                  "a:hover { text-decoration: underline; }" +
                  "strong { color: #0066FF; }" +

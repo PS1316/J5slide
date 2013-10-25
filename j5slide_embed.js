@@ -1,7 +1,7 @@
 var J5 = {
     width: 600,             // set slide width
     height: 450,            // set slide height
-    keepSlides: false,      // keeps slides in the document and in the presentation
+    keepSlides: false,      // keeps slides in the document (in addition to in the slideshow)
     notesEnabled: true,     // enables slide notes
     notesVisible: false,    // sets whether slide notes as visible by default
     notesHeight: 200        // sets height of the slide note tray
@@ -126,8 +126,8 @@ J5.loadSlides = function(win) {
                  "h1 { color: #FFA500; margin: 20px 0; font-size: 46px; text-align: center; padding: 0 10px; line-height: 100% }" +
                  "h2 { color: #FF0066; margin: 20px 0; font-size: 40px; text-align: center; padding: 0 10px; line-height: 100% }" +
                  "h3 { color: #FFD700; margin: 20px 0; font-size: 34px; text-align: center; padding: 0 10px; line-height: 100% }" +
-                 "ul { margin: 10px 0 0 50px; font-size: 0.9em; width: 750px; line-height: 100%; display: inline-block; }" +
-                 "q, p { padding: 5px 20px; }" +
+                 "ul { margin: 10px 0 0 80px; font-size: 0.9em; }" +
+                 "q, p { padding: 5px 40px; }" +
                  "q:after { content: ''; }" +
                  "q:before { content: ''; }" +
                  "q { display: block; margin-top: 140px; }" +
